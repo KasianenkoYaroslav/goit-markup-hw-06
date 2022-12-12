@@ -242,29 +242,31 @@
             <li><a href="#" class="modal-cross"><svg class="close-btn" width="11" height="11" >
               <use href="./img/icons.svg#icon-Vector"></use></svg></a></li>
           </button>
-          <p class="modal-heading">Залиште свої дані, ми вам передзвонимо</p>
-          <form action="">
+          <form class="modal-form">
+            <p class="modal-heading">Залиште свої дані, ми вам передзвонимо</p>
             <div class="form-field">
-              <label for="name" class="field-type">Ім'я</label>
+              <label for="name" class="field-type" aria-required="required">Ім'я</label>
               <input type="text" class="modal-input">
-              
+              <svg class="modal-form-icons"><use href="./img/icons.svg#icon-name"></use></svg>
             </div>
             <div class="form-field">
-              <label for="tel" class="field-type">Телефон</label>
+              <label for="tel" class="field-type" aria-required="required">Телефон</label>
               <input type="tel" pattern="[\+]\d{3}\s[\(]\d{2}[\)]\s\d{3}[\-]\d{2}[\-]\d{2}" class="modal-input">
-              
+              <svg class="modal-form-icons"><use href="./img/icons.svg#icon-tel"></use></svg>
             </div>
             <div class="form-field">
-              <label for="name" class="field-type">Пошта</label>
+              <label for="name" class="field-type" aria-required="required">Пошта</label>
               <input type="email" class="modal-input">
-              
+              <svg class="modal-form-icons"><use href="./img/icons.svg#icon-email"></use></svg>
             </div>
             <div class="form-field">
               <label for="name" class="field-type">Коментар</label>
-              <input type="text" class="modal-input">
-              
+              <textarea name="comment" id="comment" class="textarea-label" placeholder="Введіть текст"></textarea>
             </div>
-            <button type="submit" class="btn-submit">Відправити</button>
+
+            <div class="form-submit">
+              <button type="submit" class="btn-submit">Відправити</button>
+            </div>
           </form>
         </div>
       </div>

@@ -763,8 +763,8 @@ body{
     background-color: transparent;
     border-radius: 50%;
     cursor: pointer;
-    top: 8px;
-    right: 8px;
+    top: 10px;
+    right: 10px;
     border: 1px solid rgba(0, 0, 0, 0.1);
     border-radius: 50%;
     display: flex;
@@ -777,6 +777,9 @@ body{
     visibility: hidden;
     pointer-events: none;
 }
+.modal-form{
+    padding: 40px;
+}
 .modal-heading{
     font-family: 'Roboto';
     font-style: normal;
@@ -786,7 +789,6 @@ body{
     text-align: center;
     letter-spacing: 0.03em;
     color: #212121;
-    padding-top: 40px;
     padding-bottom: 12px;
 }
 .modal-input{
@@ -796,12 +798,11 @@ body{
     border-radius: 4px;
 }
 .form-field{
+    width: 100%;
     display: flex;
     flex-direction: column;
     margin-bottom: 10px;
     position: relative;
-    margin-left: 40px;
-    margin-right: 40px;
 }
 .field-type{
     font-family: 'Roboto';
@@ -812,6 +813,45 @@ body{
     letter-spacing: 0.01em;
     color: #757575;
     padding-bottom: 4px;
+}
+.modal-input{
+    display: inline-block;
+    width: 100%;
+    height: 40px;
+    padding: 0 0 0 40px;
+    margin-top: 4px;
+    outline: none;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+    cursor: pointer;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.modal-form-icons{
+    position: absolute;
+    width: 15px;
+    height: 12px;
+    top: 32px;
+    left: 10px;
+}
+.textarea-label{
+    display: block;
+    width: 100%;
+    height: 120px;
+    padding: 12px 16px;
+    margin-top: 4px;
+    outline: none;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+    cursor: pointer;
+    resize: none;
+    outline: none;
+    cursor: pointer;
+    overflow: auto;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1)
+}
+.form-submit{
+    display: flex;
+    justify-content: center;
 }
 .btn-submit{
     font-family: 'Roboto';
