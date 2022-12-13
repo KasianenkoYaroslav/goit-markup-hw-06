@@ -721,8 +721,7 @@ body{
     letter-spacing: 0.03em;
     color: rgba(255, 255, 255, 0.6);
     text-decoration: none;
-    transition: color 250ms linear,
-    
+    transition: color 250ms linear; 
 }
 .contacts-footer:hover{
     color: #2196F3;
@@ -771,6 +770,15 @@ body{
     align-items: center;
     justify-content: center;
     position: absolute;
+}
+.modal-cross:hover{
+    fill: var(--btns-links-color);
+}
+.modal-cross:focus{
+    fill: var(--btns-links-color);
+}
+.modal-cross:active{
+    fill: var(--btns-links-color);
 }
 .is-hidden{
     opacity: 0;
@@ -870,8 +878,9 @@ body{
 .modal-politic-label{
     display: flex;
     align-items: center;
+    padding-bottom: 30px;
 }
-.modal-politic-label::before{
+/* .modal-politic-label::before{
     content: "";
     width: 16px;
     height: 16px;
@@ -886,6 +895,51 @@ body{
     background-image: url(../img/check.svg);
     background-position: center;
     background-color: var(--btns-links-color);
+} */
+.modal-politic-check2{
+    width: 16px;
+    height: 16px;
+    border: 2px solid;
+    border-radius: 2px;
+    margin-right: 10px;
+    margin-left: 10px;
+    cursor: pointer; 
+}
+.modal-form-icon-check{
+    width: 15px;
+    height: 12px;
+    top: 55%;
+    transition: color 250ms linear, fill 250ms linear;
+}
+.modal-politic-check2 svg{
+    fill: transparent;
+}
+.modal-politic-check:checked + label>div{
+    border: none;
+    background-color: var(--btns-links-color);
+}
+.modal-politic-check:checked + label>div svg{
+    fill: #FFFFFF;
+}
+.check-text{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: 0.02em;
+    color: #757575;
+}
+.a-modal {
+    display: inline-block;
+    padding: 0;
+    margin: 0;
+    color: var(--btns-links-color)
+}
+.checkbox{
+    appearance: none;
+    transition: background-image 250ms cubic-bezier(0.4, 0, 0.2, 1),
+      fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .form-submit{
     display: flex;
@@ -898,6 +952,89 @@ body{
     line-height: 30px;
     letter-spacing: 0.06em;
     padding: 10px 52px 10px 52px;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.06em;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
     color: #FFFFFF;
     background-color: var(--btns-links-color);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.btn-submit:focus{
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.2);
+}
+.btn-submit:hover{
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.2);
+}
+.btn-submit:active{
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.2);
+}
+.form{
+    margin-left: 70px;
+}
+.subscriber-form{
+    margin-bottom: 20px;
+}
+.subscriber-form-bottom{
+    display: flex;
+    align-items: center;
+}
+.text-form{
+    font-weight: 700;
+    margin-bottom: 8px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+.input-bottom{
+    width: 358px;
+    height: 50px;
+    padding-left: 16px;
+    font-size: 16px;
+    line-height: 1.25;
+    cursor: pointer;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    border-radius: 4px;
+    transition: filter 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    background-color: var(--fon-hero-color);
+    color: rgba(255, 255, 255, 0.6);
+}
+.input::placeholder.input-bottom{
+    color: rgba(255, 255, 255, 0.6);
+}
+.input-bottom:focus,
+.input-bottom:hover{
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+}
+.submit-bottom{
+    display: flex;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.88;
+    letter-spacing: 0.06em;
+    width: 200px;
+    height: 50px;
+    margin-left: 12px;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    background: var(--btns-links-color);
+    color: #FFFFFF;
+    transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    border: none;
+    border-radius: 4px;
+}
+.submit-bottom:focus,
+.submit-bottom:hover {
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+}
+.submit-icon{
+    top: 13px;
+    margin-left: 10px;
+    width: 24px;
+    height: 24px;
+    fill: #FFFFFF;
 }
