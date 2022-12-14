@@ -159,7 +159,8 @@ body{
 }
 .header-contacts-icons{
     margin-right: 10px;
-    transition: color 250ms linear;
+    fill:#757575;
+    transition: fill 250ms linear;
 }
 .header-contacts-link:hover{
     fill: var(--btns-links-color);
@@ -745,7 +746,7 @@ body{
     transform: translate(-50%, -50%) scale(0);
 }
 .modal{
-    width: 500px;
+    width: 528px;
     min-height: 600px;
     position: absolute;
     top: 50%;
@@ -821,7 +822,6 @@ body{
     line-height: 14px;
     letter-spacing: 0.01em;
     color: #757575;
-    padding-bottom: 4px;
 }
 .modal-input{
     display: inline-block;
@@ -861,7 +861,7 @@ body{
 }
 .textarea-label{
     display: block;
-    width: 100%;
+    width: 448px;
     height: 120px;
     padding: 12px 16px;
     margin-top: 4px;
@@ -873,6 +873,13 @@ body{
     outline: none;
     cursor: pointer;
     overflow: auto;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+    letter-spacing: 0.01em;
+    color: rgba(117, 117, 117, 0.5);
     transition: color 250ms linear, fill 250ms linear;
 }
 .modal-politic-label{
@@ -972,21 +979,26 @@ body{
 .btn-submit:active{
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.2);
 }
-.form{
-    margin-left: 70px;
-}
-.subscriber-form{
+.subscriber-form{margin-top: 12px;
     margin-bottom: 20px;
+    margin-left: 70px;
 }
 .subscriber-form-bottom{
     display: flex;
     align-items: baseline;
 }
 .text-form{
+    font-family: 'Roboto';
+    font-style: normal;
     font-weight: 700;
-    margin-bottom: 8px;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.03em;
     text-transform: uppercase;
     color: #FFFFFF;
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
 }
 .input-bottom{
     width: 358px;
@@ -1011,7 +1023,7 @@ body{
 }
 .submit-bottom{
     display: flex;
-    font-weight: 700;
+    font-weight: 600;
     font-size: 16px;
     line-height: 1.88;
     letter-spacing: 0.06em;
