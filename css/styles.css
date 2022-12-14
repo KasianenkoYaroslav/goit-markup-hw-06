@@ -980,7 +980,7 @@ body{
 }
 .subscriber-form-bottom{
     display: flex;
-    align-items: center;
+    align-items: baseline;
 }
 .text-form{
     font-weight: 700;
